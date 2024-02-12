@@ -1,64 +1,64 @@
 package ch.authenticit.study;
 
+import java.util.NoSuchElementException;
+
 public class LinkedList {
   private Node first;
   private Node last;
+  private int size;
 
   public void addFirst(int value) {
     var newNode = new Node(value);
 
-    if (isEmpty()) {
+    if (isEmpty())
+      first = last = newNode;
+    else {
+      newNode.next = first;
       first = newNode;
-      last = newNode;
-      return;
     }
 
-    newNode.next = first;
-    first = newNode;
+    size++;
   }
 
   public void addLast(int value) {
     var newNode = new Node(value);
 
-    if (isEmpty()) {
-      first = newNode;
+    if (isEmpty())
+      first = last = newNode;
+    else {
+      last.next = newNode;
       last = newNode;
-      return;
     }
 
-    last.next = newNode;
-    last = newNode;
+    size++;
   }
 
   public void deleteFirst() {
     if (isEmpty())
       throw new IllegalStateException("Cannot delete a Node from an empty Linked List");
 
-    if (first.equals(last)) {
-      first = null;
-      last = null;
-      return;
+    if (first.equals(last))
+      first = last = null;
+    else {
+      first = first.next;
     }
 
-    first = first.next;
+    size--;
   }
 
   public void deleteLast() {
     if (isEmpty())
-      throw new IllegalStateException("Cannot delete a Node from an empty Linked List");
+      throw new NoSuchElementException("Cannot delete a Node from an empty Linked List");
 
-    if (first.equals(last)) {
-      first = null;
-      last = null;
-      return;
-    }
-
-    for (Node current = first; current != null; current = current.next) {
-      if (current.next.equals(last)) {
-        current.next = null;
-        last = current;
-        return;
+    if (first.equals(last))
+      first = last = null;
+    else {
+      var current = first;
+      while (current.next != last) {
+        current = current.next;
       }
+      current.next = null;
+      last = current;
     }
   }
 
@@ -81,6 +81,10 @@ public class LinkedList {
     return -1;
   }
 
+  public int size() {
+    return size;
+  }
+
   public void print() {
     for (Node current = first; current != null; current = current.next)
       System.out.println(current.value);
@@ -90,8 +94,8 @@ public class LinkedList {
     return first == null;
   }
 
-  private class Node {
-    private int value;
+  private static class Node {
+    private final int value;
     private Node next;
 
     public Node(int value) {
