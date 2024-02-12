@@ -37,7 +37,7 @@ public class LinkedList {
     if (isEmpty())
       throw new IllegalStateException("Cannot delete a Node from an empty Linked List");
 
-    if (first.equals(last))
+    if (first == last)
       first = last = null;
     else {
       first = first.next;
@@ -50,7 +50,7 @@ public class LinkedList {
     if (isEmpty())
       throw new NoSuchElementException("Cannot delete a Node from an empty Linked List");
 
-    if (first.equals(last))
+    if (first == last)
       first = last = null;
     else {
       var current = first;
@@ -83,6 +83,32 @@ public class LinkedList {
 
   public int size() {
     return size;
+  }
+
+  public void reverse() {
+    if (isEmpty()) return;
+
+    last = first;
+    var current = first.next;
+    first.next = null;
+    while (current != null) {
+      var nextNode = current.next;
+      current.next = first;
+      first = current;
+      current = nextNode;
+    }
+  }
+
+  public int[] toArray() {
+    int[] array = new int[size];
+    var current = first;
+    var index = 0;
+    while (current != null) {
+      array[index++] = current.value;
+      current = current.next;
+    }
+
+    return array;
   }
 
   public void print() {
