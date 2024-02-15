@@ -8,15 +8,14 @@ public class Main {
     ll.addFirst(20);
     ll.addFirst(10);
     ll.addLast(30);
-    ll.reverse();
-    var array = ll.toArray();
-    System.out.println(Arrays.toString(array));
-    ll.addFirst(35);
-    ll.addLast(5);
-    array = ll.toArray();
-    System.out.println(Arrays.toString(array));
-    ll.reverse();
-    array = ll.toArray();
-    System.out.println(Arrays.toString(array));
+    ll.addLast(40);
+    ll.addLast(50);
+
+    var oddNumberMiddle = ll.getMiddle();
+    ll.addLast(60);
+    var evenNumberMiddle = ll.getMiddle();
+
+    System.out.println("OddNumberMiddle: " + Arrays.toString(oddNumberMiddle));
+    System.out.println("EvenNumberMiddle: " + Arrays.toString(evenNumberMiddle));
   }
 }

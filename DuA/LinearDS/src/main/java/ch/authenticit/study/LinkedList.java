@@ -5,7 +5,7 @@ import java.util.NoSuchElementException;
 public class LinkedList {
   private Node first;
   private Node last;
-  private int size;
+  private int size = 0;
 
   public void addFirst(int value) {
     var newNode = new Node(value);
@@ -99,6 +99,48 @@ public class LinkedList {
     }
   }
 
+  public Node getKthFromTheEnd(int k) {
+    if (k <= 0)
+      throw new IllegalArgumentException("The Kth Node not cannot be 0 or a negative number.");
+
+    if (k > size)
+      throw new IllegalStateException("Cannot get Kth Node bigger than count of Nodes in Linked List.");
+
+    int distance = k - 1;
+
+    var stopper = first;
+    var kthNode = first;
+    int i = 0;
+
+    while (stopper != last) {
+      stopper = stopper.next;
+
+      if (i >= distance)
+        kthNode = kthNode.next;
+
+      i++;
+    }
+
+    return kthNode;
+  }
+
+  public int[] getMiddle() {
+    if (isEmpty())
+      return null;
+
+    int m = (int) Math.round(size / 2.0);
+    var middleNode = first;
+
+    for(int i = 1; i != m; i++) {
+      middleNode = middleNode.next;
+    }
+
+    if (size % 2 == 0)
+      return new int[] {middleNode.value, middleNode.next.value};
+
+    return new int[] {middleNode.value};
+  }
+
   public int[] toArray() {
     int[] array = new int[size];
     var current = first;
@@ -123,6 +165,11 @@ public class LinkedList {
   private static class Node {
     private final int value;
     private Node next;
+
+    @Override
+    public String toString() {
+      return Integer.toString(value);
+    }
 
     public Node(int value) {
       this.value = value;
