@@ -141,6 +141,26 @@ public class LinkedList {
     return new int[] {middleNode.value};
   }
 
+  public boolean hasLoop() {
+    var slow = first;
+    var fast = first;
+
+    while (fast != null) {
+      slow = slow.next;
+      fast = fast.next;
+      fast = fast.next;
+
+      if (fast == slow)
+        return true;
+    }
+    return false;
+  }
+
+  // This method only exists for testing the hasLoop() method
+  public void addLoop() {
+    last.next = first;
+  }
+
   public int[] toArray() {
     int[] array = new int[size];
     var current = first;
