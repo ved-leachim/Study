@@ -1,6 +1,6 @@
 package ch.authenticit.study.stack;
 
-public class ArrayStack implements Stack {
+public class ArrayStack implements IStack {
 
     private int[] items;
     private int count = 0;
