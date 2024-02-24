@@ -1,26 +1,27 @@
 package ch.authenticit.study;
 
-import ch.authenticit.study.queue.ArrayPriorityQueue;
-import ch.authenticit.study.queue.ArrayQueue;
-import ch.authenticit.study.queue.QueueReverser;
-import ch.authenticit.study.queue.StackQueue;
+import ch.authenticit.study.queue.*;
 
 import java.util.concurrent.LinkedBlockingQueue;
 
 public class Main {
     public static void main(String[] args) {
-        var queue = new LinkedBlockingQueue<Integer>() {
-            {
-                add(10);
-                add(20);
-                add(30);
-                add(40);
-                add(50);
-            }
-        };
-        var queueReverser = new QueueReverser<Integer>();
-
-        var partiallyReversedQueue = queueReverser.reverse(queue, 3);
-        System.out.println(partiallyReversedQueue);
+        var llq = new LinkedListQueue<Integer>();
+        llq.enqueue(10);
+        llq.enqueue(20);
+        llq.enqueue(30);
+        llq.enqueue(40);
+        llq.enqueue(50);
+        System.out.println(llq);
+        System.out.println(llq.size());
+        System.out.println(llq.dequeue());
+        System.out.println(llq.dequeue());
+        System.out.println(llq.dequeue());
+        System.out.println(llq);
+        System.out.println(llq.size());
+        llq.enqueue(60);
+        llq.enqueue(70);
+        System.out.println(llq);
+        System.out.println(llq.size());
     }
 }
