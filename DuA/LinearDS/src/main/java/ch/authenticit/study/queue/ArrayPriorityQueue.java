@@ -71,7 +71,6 @@ public class ArrayPriorityQueue implements IQueue {
         return count == 0;
     }
 
-    @Override
     public boolean isFull() {
         return count == items.length;
     }

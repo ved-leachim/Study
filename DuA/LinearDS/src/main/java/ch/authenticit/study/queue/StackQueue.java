@@ -41,11 +41,6 @@ public class StackQueue implements IQueue {
         return enqueue.isEmpty() && dequeue.isEmpty();
     }
 
-    @Override
-    public boolean isFull() {
-        return false;
-    }
-
     private void moveToDequeue() {
         if (dequeue.isEmpty()) {
             while (!enqueue.isEmpty()) {

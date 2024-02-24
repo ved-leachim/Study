@@ -8,5 +8,4 @@ public interface IQueue {
      public int peek();
 
      public boolean isEmpty();
-     public boolean isFull();
 }
