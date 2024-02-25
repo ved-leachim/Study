@@ -1,8 +1,8 @@
 package ch.authenticit.study.queue;
 
+import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
-import java.util.concurrent.LinkedBlockingQueue;
 
 public class QueueReverser<E> {
     public Queue<E> reverse(Queue<E> queue, int k) {
@@ -12,7 +12,7 @@ public class QueueReverser<E> {
                 stack.push(queue.remove());
         }
 
-        var reversedQueue = new LinkedBlockingQueue<E>();
+        var reversedQueue = new LinkedList<E>();
         while (!stack.isEmpty())
             reversedQueue.add(stack.pop());
 
