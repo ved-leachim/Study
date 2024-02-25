@@ -13,10 +13,8 @@ public class StackWithTwoQueues<E> {
 
     public void push(E item) {
         // O(1)
-        if (queue2.isEmpty())
-            queue1.add(item);
-        else
-            queue2.add(item);
+        var activeQueue = queue1.isEmpty() ? queue2 : queue1;
+        activeQueue.add(item);
 
         lastElement = item;
         count++;
@@ -43,18 +41,12 @@ public class StackWithTwoQueues<E> {
     }
 
     public int size() {
-        if (queue1.isEmpty())
-            return queue2.size();
-
-        return queue1.size();
+        return queue1.isEmpty() ? queue2.size() : queue1.size();
     }
 
     @Override
     public String toString() {
-        if (queue1.isEmpty())
-            return queue2.toString();
-
-        return queue1.toString();
+        return queue1.isEmpty() ? queue2.toString() : queue1.toString();
     }
 
     private E removeLastElement(Queue<E> queue1, Queue<E> queue2) {
