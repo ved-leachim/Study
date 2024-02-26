@@ -1,11 +1,11 @@
 package ch.authenticit.study;
 
-import ch.authenticit.study.hashtable.CharFinder;
+import ch.authenticit.study.set.CharFinder;
 
 public class Main {
     public static void main(String[] args) {
-        String input = "a green apple grows";
-        var stringChecker = new CharFinder();
-        System.out.println(stringChecker.firstNonRepeatedChar(input));
+        String input = "green apple";
+        var charFinder = new CharFinder();
+        System.out.println(charFinder.findFirstRepeatedChar(input));
     }
 }
