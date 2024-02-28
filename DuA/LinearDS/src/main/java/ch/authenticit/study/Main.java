@@ -1,33 +1,24 @@
 package ch.authenticit.study;
 
-import ch.authenticit.study.hashtable.HashTable;
+import ch.authenticit.study.hashtable.HashTableExercises;
+
+import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        var ht = new HashTable<Integer, String>(10);
-        ht.put(5, "Hello");
-        ht.put(6, "World");
-        System.out.println(ht.get(5) + " " + ht.get(6));
-        ht.put(1, "Test");
-        ht.put(11, "Collision");
-        System.out.println(ht.get(1) + " " + ht.get(11));
-        ht.put(21, "Extended");
-        System.out.println(ht.get(1) + " " + ht.get(11) + " " + ht.get(21));
-        ht.put(21, "Replaced");
-        System.out.println(ht.get(1) + " " + ht.get(11) + " " + ht.get(21));
+        System.out.println("-----EX 1:-----");
+        var hte = new HashTableExercises();
+        var inputArray = new int[] {1, 2, 2, 3, 3, 3, 4, 4, 5, 5, 5};
+        System.out.println(hte.mostFrequent(inputArray));
+        System.out.println(hte.mostFrequentFunctional(inputArray));
 
-        System.out.println("--------------------");
+        System.out.println("-----EX 2:-----");
+        var inputArray2 = new int[] {1, 7, 5, 9, 2, 12, 3, 19, 21, -2, -4};
+        var countOfPairs = hte.countPairsWithDiff(inputArray2, 2);
+        System.out.println("Count of Pairs diff 2 = " + countOfPairs);
 
-        var ht2 = new HashTable<String, String>(10);
-        ht2.put("1", "Hello");
-        ht2.put("2", "World");
-        System.out.println(ht2.get("1") + " " + ht2.get("2"));
-        ht2.put("1", "Test");
-        ht2.put("11", "Collision");
-        System.out.println(ht2.get("1") + " " + ht2.get("11"));
-        ht2.put("21", "Extended");
-        System.out.println(ht2.get("1") + " " + ht2.get("11") + " " + ht2.get("21"));
-        ht2.put("21", "Replaced");
-        System.out.println(ht2.get("1") + " " + ht2.get("11") + " " + ht2.get("21"));
+        System.out.println("-----EX 3:-----");
+        var inputArray3 = new int[] {2, 7, 11, 15};
+        System.out.println(Arrays.toString(hte.twoSum(inputArray3, 17)));
     }
 }
