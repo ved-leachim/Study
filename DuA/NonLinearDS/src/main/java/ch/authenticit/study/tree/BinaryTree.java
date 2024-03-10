@@ -49,6 +49,32 @@ public class BinaryTree {
         return equals(root, tree.root);
     }
 
+    public void swapRoot() {
+        var temp = root.leftChild;
+        root.leftChild = root.rightChild;
+        root.rightChild = temp;
+    }
+
+    public boolean isBinarySearchTree() {
+        return isBinarySearchTree(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+    }
+
+    private boolean isBinarySearchTree(Node root, int min, int max) {
+        // Base Condition
+        // If tree is empty
+        if (root == null)
+            return true;
+        // Current Node is not in Range
+        if (root.value < min || root.value > max)
+            return false;
+        // Current is a Leaf Node
+        if (isLeaf(root))
+            return true;
+        // Recursion: Root, Left, Right
+        return isBinarySearchTree(root.leftChild, min, root.value - 1) &&
+                isBinarySearchTree(root.rightChild, root.value + 1, max);
+    }
+
     private int height(Node root) {
         if (root == null)
             return -1;
