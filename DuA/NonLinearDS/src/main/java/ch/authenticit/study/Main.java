@@ -17,6 +17,7 @@ public class Main {
         System.out.println("Size: " + bst.size());
         System.out.println("LeafCount: " + bst.countLeafs());
         System.out.println("Max: " + bst.max());
+        System.out.println("Are Sibling: " + bst.areSibling(4, 9));
         bst.traverseLevelOrder();
     }
 }

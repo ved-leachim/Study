@@ -142,6 +142,26 @@ public class BinaryTree {
         return max(root.rightChild);
     }
 
+    public boolean areSibling(int first, int second) {
+        if (root == null)
+            return false;
+        return areSibling(root, first, second);
+    }
+
+    private boolean areSibling(Node root, int first, int second) {
+        if (root.leftChild == null || root.rightChild == null)
+            return false;
+        // Base Condition
+            // left or right child contains first
+        if (root.leftChild.value == first)
+            return root.rightChild.value == second;
+
+        if (root.rightChild.value == first)
+            return root.leftChild.value == second;
+
+        return areSibling(root.leftChild, first, second) || areSibling(root.rightChild, first, second);
+    }
+
     private int height(Node root) {
         if (root == null)
             return -1;
