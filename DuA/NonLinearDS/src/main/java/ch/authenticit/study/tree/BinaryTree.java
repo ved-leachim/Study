@@ -128,6 +128,20 @@ public class BinaryTree {
         return countLeafs(root.leftChild) + countLeafs(root.rightChild);
     }
 
+    public int max() {
+        if (root == null)
+            throw new IllegalStateException("Cannot get max of an empty tree.");
+
+        return max(root);
+    }
+
+    private int max(Node root) {
+        if (isLeaf(root))
+            return root.value;
+
+        return max(root.rightChild);
+    }
+
     private int height(Node root) {
         if (root == null)
             return -1;
