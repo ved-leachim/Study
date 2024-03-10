@@ -12,9 +12,8 @@ public class Main {
         bst.insert(6);
         bst.insert(8);
         bst.insert(10);
+
         System.out.println("Break here:");
-        System.out.println("Is a BST: " + bst.isBinarySearchTree());
-        var list = bst.getNodesAtDistance(0);
-        System.out.println(list);
+        bst.traverseLevelOrder();
     }
 }

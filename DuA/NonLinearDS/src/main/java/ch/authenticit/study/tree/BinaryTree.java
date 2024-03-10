@@ -93,6 +93,13 @@ public class BinaryTree {
         getNodesAtDistance(root.rightChild, distance -1, list);
     }
 
+    public void traverseLevelOrder() {
+        for (var i = 0; i <= height(); i++) {
+            for (var value : getNodesAtDistance(i))
+                System.out.println(value);
+        }
+    }
+
     private int height(Node root) {
         if (root == null)
             return -1;
