@@ -1,5 +1,7 @@
 package ch.authenticit.study.tree;
 
+import java.util.ArrayList;
+
 public class BinaryTree {
     private Node root;
 
@@ -67,12 +69,28 @@ public class BinaryTree {
         // Current Node is not in Range
         if (root.value < min || root.value > max)
             return false;
-        // Current is a Leaf Node
-        if (isLeaf(root))
-            return true;
         // Recursion: Root, Left, Right
         return isBinarySearchTree(root.leftChild, min, root.value - 1) &&
                 isBinarySearchTree(root.rightChild, root.value + 1, max);
+    }
+
+    public ArrayList<Integer> getNodesAtDistance(int distance) {
+        var list = new ArrayList<Integer>();
+        getNodesAtDistance(root, distance, list);
+        return list;
+    }
+
+    private void getNodesAtDistance(Node root, int distance, ArrayList<Integer> list) {
+        if (root == null)
+            return;
+
+        if (distance == 0) {
+            list.add(root.value);
+            return;
+        }
+
+        getNodesAtDistance(root.leftChild, distance -1, list);
+        getNodesAtDistance(root.rightChild, distance -1, list);
     }
 
     private int height(Node root) {
