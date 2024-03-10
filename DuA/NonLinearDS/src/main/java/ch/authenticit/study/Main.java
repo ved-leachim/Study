@@ -15,6 +15,7 @@ public class Main {
 
         System.out.println("Break here:");
         System.out.println("Size: " + bst.size());
+        System.out.println("LeafCount: " + bst.countLeafs());
         bst.traverseLevelOrder();
     }
 }

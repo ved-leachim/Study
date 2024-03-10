@@ -89,8 +89,8 @@ public class BinaryTree {
             return;
         }
 
-        getNodesAtDistance(root.leftChild, distance -1, list);
-        getNodesAtDistance(root.rightChild, distance -1, list);
+        getNodesAtDistance(root.leftChild, distance - 1, list);
+        getNodesAtDistance(root.rightChild, distance - 1, list);
     }
 
     public void traverseLevelOrder() {
@@ -100,11 +100,11 @@ public class BinaryTree {
         }
     }
 
-    public int size(){
+    public int size() {
         return size(root);
     }
 
-    private int size(Node root){
+    private int size(Node root) {
         if (root == null)
             return 0;
 
@@ -112,6 +112,20 @@ public class BinaryTree {
             return 1;
 
         return 1 + size(root.leftChild) + size(root.rightChild);
+    }
+
+    public int countLeafs() {
+        return countLeafs(root);
+    }
+
+    private int countLeafs(Node root) {
+        if (root == null)
+            return 0;
+
+        if (isLeaf(root))
+            return 1;
+
+        return countLeafs(root.leftChild) + countLeafs(root.rightChild);
     }
 
     private int height(Node root) {
