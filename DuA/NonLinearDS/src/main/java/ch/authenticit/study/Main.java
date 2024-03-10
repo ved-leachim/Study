@@ -14,6 +14,7 @@ public class Main {
         bst.insert(10);
 
         System.out.println("Break here:");
+        System.out.println("Size: " + bst.size());
         bst.traverseLevelOrder();
     }
 }

@@ -100,6 +100,20 @@ public class BinaryTree {
         }
     }
 
+    public int size(){
+        return size(root);
+    }
+
+    private int size(Node root){
+        if (root == null)
+            return 0;
+
+        if (isLeaf(root))
+            return 1;
+
+        return 1 + size(root.leftChild) + size(root.rightChild);
+    }
+
     private int height(Node root) {
         if (root == null)
             return -1;
