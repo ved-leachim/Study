@@ -13,11 +13,7 @@ public class Main {
         bst.insert(8);
         bst.insert(10);
 
-        System.out.println("Break here:");
-        System.out.println("Size: " + bst.size());
-        System.out.println("LeafCount: " + bst.countLeafs());
-        System.out.println("Max: " + bst.max());
-        System.out.println("Are Sibling: " + bst.areSibling(4, 9));
+        System.out.println("Ancestors: " + bst.getAncestors(1));
         bst.traverseLevelOrder();
     }
 }

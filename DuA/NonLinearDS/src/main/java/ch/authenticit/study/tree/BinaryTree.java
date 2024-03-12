@@ -1,6 +1,7 @@
 package ch.authenticit.study.tree;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class BinaryTree {
     private Node root;
@@ -151,15 +152,40 @@ public class BinaryTree {
     private boolean areSibling(Node root, int first, int second) {
         if (root.leftChild == null || root.rightChild == null)
             return false;
-        // Base Condition
-            // left or right child contains first
+
         if (root.leftChild.value == first)
             return root.rightChild.value == second;
 
         if (root.rightChild.value == first)
             return root.leftChild.value == second;
 
-        return areSibling(root.leftChild, first, second) || areSibling(root.rightChild, first, second);
+        return areSibling(root.leftChild, first, second) ||
+                areSibling(root.rightChild, first, second);
+    }
+
+    public List<Integer> getAncestors(int value) {
+        var list = new ArrayList<Integer>();
+
+        if (root == null || isLeaf(root))
+            return list;
+        getAncestors(root, value, list);
+        return list;
+    }
+
+    private boolean getAncestors(Node root, int value, List<Integer> ancestors) {
+        if (root == null)
+            return false;
+
+        if (root.value == value)
+            return true;
+
+        if (getAncestors(root.leftChild, value, ancestors) ||
+        getAncestors(root.rightChild, value, ancestors)){
+            ancestors.add(root.value);
+            return true;
+        }
+
+        return false;
     }
 
     private int height(Node root) {
