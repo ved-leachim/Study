@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+/* Targets HTML-Elements like <h1>..<hx> Elements, <p> */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+Target one of the Tailwind Layers.
+To add custom styles to this Layer.
+ */
+@layer base {
+  html {
+    font-family: 'Quicksand', sans-serif;
+  }
+
+  h1 {
+    @apply text-6xl font-bold;
+  }
+  h2 {
+    @apply text-5xl font-bold;
+  }
+  h3 {
+    @apply text-4xl font-bold;
+  }
+  h4 {
+    @apply text-3xl font-bold;
+  }
+  h5 {
+    @apply text-2xl font-bold;
+  }
+  h6 {
+    @apply text-xl font-bold;
+  }
+
+}
+
+@layer components {
+  .menu-item {
+    @apply relative flex h-full items-center p-4 cursor-pointer font-bold text-pink-200 hover:text-zinc-200 hover:bg-white/10 transition-colors ease-in-out
+  }
+}
