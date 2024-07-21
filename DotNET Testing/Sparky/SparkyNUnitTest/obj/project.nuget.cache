@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "Xj7eOiMoDdJ4uMHDR0HYWbpW4MwY7hDpy3SlvzkIVdNK1434I2JfHhHn1/t9UXuXqcl6w07dAJ3gwfAuV0+Bew==",
+  "success": true,
+  "projectFilePath": "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/SparkyNUnitTest/SparkyNUnitTest.csproj",
+  "expectedPackageFiles": [
+    "/Users/michael/.nuget/packages/castle.core/5.1.1/castle.core.5.1.1.nupkg.sha512",
+    "/Users/michael/.nuget/packages/microsoft.codecoverage/17.10.0/microsoft.codecoverage.17.10.0.nupkg.sha512",
+    "/Users/michael/.nuget/packages/microsoft.net.test.sdk/17.10.0/microsoft.net.test.sdk.17.10.0.nupkg.sha512",
+    "/Users/michael/.nuget/packages/microsoft.testplatform.objectmodel/17.10.0/microsoft.testplatform.objectmodel.17.10.0.nupkg.sha512",
+    "/Users/michael/.nuget/packages/microsoft.testplatform.testhost/17.10.0/microsoft.testplatform.testhost.17.10.0.nupkg.sha512",
+    "/Users/michael/.nuget/packages/moq/4.20.70/moq.4.20.70.nupkg.sha512",
+    "/Users/michael/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512",
+    "/Users/michael/.nuget/packages/nunit/4.1.0/nunit.4.1.0.nupkg.sha512",
+    "/Users/michael/.nuget/packages/nunit3testadapter/4.5.0/nunit3testadapter.4.5.0.nupkg.sha512",
+    "/Users/michael/.nuget/packages/system.diagnostics.eventlog/6.0.0/system.diagnostics.eventlog.6.0.0.nupkg.sha512",
+    "/Users/michael/.nuget/packages/system.reflection.metadata/1.6.0/system.reflection.metadata.1.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}

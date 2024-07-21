@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/SparyNUnitTest/SparyNUnitTest.csproj": {}
+  },
+  "projects": {
+    "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/SparyNUnitTest/SparyNUnitTest.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/SparyNUnitTest/SparyNUnitTest.csproj",
+        "projectName": "SparyNUnitTest",
+        "projectPath": "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/SparyNUnitTest/SparyNUnitTest.csproj",
+        "packagesPath": "/Users/michael/.nuget/packages/",
+        "outputPath": "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/SparyNUnitTest/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/michael/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[17.10.0, )"
+            },
+            "NUnit": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "NUnit3TestAdapter": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.201/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

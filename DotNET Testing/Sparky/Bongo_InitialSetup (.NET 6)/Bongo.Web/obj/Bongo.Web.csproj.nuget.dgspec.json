@@ -1,0 +1,278 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.Web/Bongo.Web.csproj": {}
+  },
+  "projects": {
+    "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.Core/Bongo.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.Core/Bongo.Core.csproj",
+        "projectName": "Bongo.Core",
+        "projectPath": "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.Core/Bongo.Core.csproj",
+        "packagesPath": "/Users/michael/.nuget/packages/",
+        "outputPath": "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/michael/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.DataAccess/Bongo.DataAccess.csproj": {
+                "projectPath": "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.DataAccess/Bongo.DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.DataAccess/Bongo.DataAccess.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.DataAccess/Bongo.DataAccess.csproj",
+        "projectName": "Bongo.DataAccess",
+        "projectPath": "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.DataAccess/Bongo.DataAccess.csproj",
+        "packagesPath": "/Users/michael/.nuget/packages/",
+        "outputPath": "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.DataAccess/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/michael/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.Models/Bongo.Models.csproj": {
+                "projectPath": "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.Models/Bongo.Models.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.0-preview.5.21301.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[6.0.0-preview.5.21301.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0-preview.5.21301.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0-preview.5.21301.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.Models/Bongo.Models.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.Models/Bongo.Models.csproj",
+        "projectName": "Bongo.Models",
+        "projectPath": "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.Models/Bongo.Models.csproj",
+        "packagesPath": "/Users/michael/.nuget/packages/",
+        "outputPath": "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.Models/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/michael/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.Web/Bongo.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.Web/Bongo.Web.csproj",
+        "projectName": "Bongo.Web",
+        "projectPath": "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.Web/Bongo.Web.csproj",
+        "packagesPath": "/Users/michael/.nuget/packages/",
+        "outputPath": "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.Web/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/michael/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.Core/Bongo.Core.csproj": {
+                "projectPath": "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.Core/Bongo.Core.csproj"
+              },
+              "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.DataAccess/Bongo.DataAccess.csproj": {
+                "projectPath": "/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Bongo_InitialSetup (.NET 6)/Bongo.DataAccess/Bongo.DataAccess.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+              "target": "Package",
+              "version": "[6.0.32, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.0-preview.5.21301.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.0-preview.5.21301.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.0-preview.5.21301.9, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.303/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

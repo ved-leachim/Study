@@ -1,0 +1,12 @@
+/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Sparky/bin/Debug/net8.0/Sparky.deps.json
+/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Sparky/bin/Debug/net8.0/Sparky.dll
+/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Sparky/bin/Debug/net8.0/Sparky.pdb
+/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Sparky/obj/Debug/net8.0/Sparky.GeneratedMSBuildEditorConfig.editorconfig
+/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Sparky/obj/Debug/net8.0/Sparky.AssemblyInfoInputs.cache
+/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Sparky/obj/Debug/net8.0/Sparky.AssemblyInfo.cs
+/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Sparky/obj/Debug/net8.0/Sparky.csproj.CoreCompileInputs.cache
+/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Sparky/obj/Debug/net8.0/Sparky.sourcelink.json
+/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Sparky/obj/Debug/net8.0/Sparky.dll
+/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Sparky/obj/Debug/net8.0/refint/Sparky.dll
+/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Sparky/obj/Debug/net8.0/Sparky.pdb
+/Users/michael/Git/Private/Learning/DotNET Testing/Sparky/Sparky/obj/Debug/net8.0/ref/Sparky.dll
